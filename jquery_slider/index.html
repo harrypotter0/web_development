@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>JQuery Slider</title>
+    </head>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script src="jquery.js" type="text/javascript"></script>
+    <script>
+        $(document).ready(function(){
+            $('li.a').filter(':nth-child(n+3)').addClass('hide');
+            $('ul').on('click', 'li.q', function(){
+                $(this)
+                    .next()
+                        .slideDown(200)
+                        .siblings('li.a')
+                            .slideUp(200);
+            });
+        });
+    </script>
+    <body>
+        <ul>
+            <li class='q'>What is my name ?</li>
+            <li class='a'>My name is Jon Skeet.</li>
+            <li class='q'>What is my name ?</li>
+            <li class='a'>My name is Jon Skeet.</li>
+            <li class='q'>What is my name ?</li>
+            <li class='a'>My name is Jon Skeet.</li>
+            <li class='q'>What is my name ?</li>
+            <li class='a'>My name is Jon Skeet.</li>
+            <li class='q'>What is my name ?</li>
+            <li class='a'>My name is Jon Skeet.</li>
+            <li class='q'>What is my name ?</li>
+            <li class='a'>My name is Jon Skeet.</li>
+            <li class='q'>What is my name ?</li>
+            <li class='a'>My name is Jon Skeet.</li>
+            <li class='q'>What is my name ?</li>
+            <li class='a'>My name is Jon Skeet.</li>
+            <li class='q'>What is my name ?</li>
+            <li class='a'>My name is Jon Skeet.</li>
+            <li class='q'>What is my name ?</li>
+            <li class='a'>My name is Jon Skeet.</li>
+            <li class='q'>What is my name ?</li>
+            <li class='a'>My name is Jon Skeet.</li>
+        </ul>
+    </body>
+</html>

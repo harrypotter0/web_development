@@ -1,0 +1,25 @@
+body{
+    width:500px;
+    margin:auto;
+    text-align:center;
+}
+
+li{
+    list-style:none;
+}
+
+li.a{
+    margin:0;
+    padding:1em 0;
+}
+
+li.q{
+    cursor:pointer;
+    font-weight:bold;
+    font-size:1.5em;
+    line-height: 2em;
+    background:rgb(133, 128, 128);
+    border: 1px #666666 solid;
+}
+
+.hide{display: none;}
